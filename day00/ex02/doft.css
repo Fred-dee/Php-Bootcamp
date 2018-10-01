@@ -1,0 +1,77 @@
+body
+{
+	background-color: #4e4e4e;
+}
+
+.img-rounded
+{
+	border-radius: 15px;
+	border: 0px;
+}
+
+.panel-side
+{
+	text-align: center;
+	background-color: #8f8f8f;
+	border-radius: 15px;
+	box-shadow: 7px 7px 5px;
+	display: flex;
+	flex-direction: column;
+	max-width: 250px;
+	justify-content: space-evenly;
+	min-height: 50%;
+}
+
+.panel-center
+{
+	border-radius: 15px;
+	box-shadow: 7px 7px 5px;
+	max-height: 100%;
+	height: 100%;
+}
+
+.img-main
+{
+	
+}
+
+.img-small
+{
+	max-height: 15px;
+	max-width:  15px;
+	position: relative;
+}
+
+.img-pannel
+{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;
+}
+
+.img-banner
+{
+	box-shadow: 7px 7px 5px;
+	flex-grow: 1;
+	margin-left: 25%;
+}
+.img-icon
+{
+	max-width: inherit;
+	max-height: 80px;
+	height: 100%;
+	width: auto;
+	flex-grow: 1;
+	border: 0px;
+}
+
+.my-carousel
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 5px;
+}
