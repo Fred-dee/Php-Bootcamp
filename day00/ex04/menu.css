@@ -1,0 +1,40 @@
+body
+{
+	background-image: url("https://i.pinimg.com/originals/55/0b/7a/550b7afbf123fa534ac657745e1d512c.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.menu-icon
+{
+	background-image: url("https://static.thenounproject.com/png/195031-200.png");
+	width: 200px;
+	height: 215px;
+	background-repeat: no-repeat;
+}
+.menu-trigger
+{
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-item
+{
+	font-display: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

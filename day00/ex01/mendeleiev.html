@@ -1,471 +1,750 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title></title>
-		<meta charset="utf-8" />
-		<style>
-			body
-			{
-				background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Hme4C4_7iosf3emf/realistic-galaxy-milky-way-colorful-space-background_rlfmozgtll_thumbnail-full01.png');
-				background-repeat: no-repeat;
-				background-size: cover contain ;
-			}
-			.wrapper
-			{
-				max-height: 500px;
-				display: box;
-			}
-			.flex-grid
-			{
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <style>
+            body
+            {
+                background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Hme4C4_7iosf3emf/realistic-galaxy-milky-way-colorful-space-background_rlfmozgtll_thumbnail-full01.png');
+                background-repeat: no-repeat;
+                background-size: cover contain ;
+            }
+            .wrapper
+            {
+                max-height: 500px;
+                /*display: flex;
+                justify-content: space-between;
+                flow-direction : column; */
+            }
+            .flex-grid
+            {
+                display: flex;
+                justify-content: space-between;
+                grid-row: auto;
+                padding: 3px;
+                flow-grow : 1;
+            }
+            .el_number
+            {
+                font-size: 1em;
+                width: 100%;
+                position: relative;
+                text-align: left;
+            }
+            .el_weight
+            {
+                position: relative;
+                font-size: 1em;
+                width: 100%;
+                text-align: right;
+            }
+            .el_name
+            {
+                text-align: center;
+            }
+            .box
+            {
+                color: black;
+                flex-grow: 1;
+                margin: 5px;
+                text-align: center;
+                font-size: 0.5em;
+                min-height: 5em;
+                max-height: 10em;
+                min-width: 5em;
+                max-width: 10em;
+                -webkit-user-modify: read-write;
+                -moz-user-modify: read-write;
+                user-modify: read-write;
+            }
+            .noble_gas
+            {
+                background-color: #f8ff30;
+            }
+            .alkali_metal
+            {
+                background-color: #ff30ba;
+            }
+            .alkaline_earth
+            {
+                background-color: #a80070;
+            }
+            .transition_metal
+            {
+                background-color: #4ba1ed;
+            }
+            .basic_metal
+            {
+                background-color: #ff6c16;
+            }
+            .semi_metal
+            {
+                background-color: #16ff48;
+            }
+            .non_metal
+            {
+                background-color: #02acef;
+            }
+            .halogen
+            {
+                background-color: #efe302;
+            }
+            .lanthanide
+            {
+                background-color: #b8ff6d;
+            }
+            .actinide
+            {
+                background-color: #fc1b8f;
+            }
 
-				display: flex;
-				justify-content: space-around;
-				grid-row: auto;
-				padding: 3px;
-			}
-			.el_number
-			{
-				font-size: 1em;
-				justify-content: flex-start;
-			}
-			.el_weight
-			{
-				font-size: 1em;
-				right: 0px;
-				top: 0px;
-			}
-			.box
-			{
-				color: black;
-				text-align: center;
-				flex-grow: 1;
-				margin: 5px;
-				font-size: 0.5em;
-				-webkit-user-modify: read-write;
-    			-moz-user-modify: read-write;
-				user-modify: read-write;
-			}
-			.noble_gas
-			{
-				background-color: #f8ff30;
-			}
-			.alkali_metal
-			{
-				background-color: #ff30ba;
-			}
-			.alkaline_earth
-			{
-				background-color: #a80070;
-			}
-			.transition_metal
-			{
-				background-color: #4ba1ed;
-			}
-			.basic_metal
-			{
-				background-color: #ff6c16;
-			}
-			.semi_metal
-			{
-				background-color: #16ff48;
-			}
-			.non_metal
-			{
-				background-color: #02acef;
-			}
-			.halogen
-			{
-				background-color: #efe302;
-			}
-			.lanthanide
-			{
-				background-color: #b8ff6d;
-			}
-			.actinide
-			{
-				background-color: #fc1b8f;
-			}
-			.el_name
-			{
-				
-			}
-
-		</style>
-	</head>
-	<body>
-		<div class ="wrapper">
-			<div class="flex-grid">
-				<div class="box non_metal">
-					<span class="el_weight">1.008</span>
-					<h1>H</h1>
-					<span class="el_number">1</span>
-				</div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box noble_gas">
-					<span class="el_weight"></span>
-					<h1>He</h1>
-					<span class="el_number"></span>
-				</div>
-			</div>
-			<div class="flex-grid">
-				<div class="box alkali_metal">
-					<span class="el_weight">6.941</span>
-					<h1>Li</h1>
-					<span class="el_number">3</span>
-				</div>
-				<div class="box alkaline_earth">
-					<span class="el_weight">9.012</span>
-						<h1>Be</h1>
-					<span class="el_number">4</span>
-				</div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box semi_metal">
-					<span class="el_weight">10.811</span>
-					<h1>Ne</h1>
-					<span class="el_number">5</span>
-				</div>
-				<div class="box non_metal">
-					<span class="el_weight">12.011</span>
-					<h1>C</h1>
-					<span class="el_number">6</span>
-				</div>
-				<div class="box non_metal">
-					<span class="el_weight">14.007</span>
-					<h1>N</h1>
-					<span class="el_number">7</span>
-				</div>
-				<div class="box non_metal">
-					<span class="el_weight">15.999</span>
-					<h1>O</h1>
-					<span class="el_number">8</span>
-				</div>
-				<div class="box halogen">
-					<span class="el_weight">18.988</span>
-					<h1>Fe</h1>
-					<span class="el_number">9</span>				
-				</div>
-				<div class="box noble_gas">
-					<span class="el_weight">20.180</span>
-					<h1>Ne</h1>
-					<span class="el_number">10</span>
-				</div>
-			</div>
-			<div class="flex-grid">
-				<div class="box alkali_metal">
-					<span class="el_weight">22.99</span>
-					<h1>Na</h1>
-					<span class="el_number">11</span>
-				</div>
-				<div class="box alkaline_earth">
-					<span class="el_weight">24.305</span>
-					<h1>Mg</h1>
-					<span class="el_number">12</span>
-				</div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box basic_metal">
-					<span class="el_weight">26.982</span>
-					<h1>Al</h1>
-					<span class="el_number">13</span>
-				</div>
-				<div class="box semi_metal">
-					<span class="el_weight">28.086</span>
-					<h1>Si</h1>
-					<span class="el_number">14</span>
-				</div>
-				<div class="box non_metal">
-					<span class="el_weight">30.974</span>
-					<h1>P</h1>
-					<span class="el_number">15</span>
-				</div>
-				<div class="box non_metal">
-					<span class="el_weight">32.066</span>
-					<h1>S</h1>
-					<span class="el_number">16</span>
-				</div>
-				<div class="box halogen">
-					<span class="el_weight">35.453</span>
-					<h1>Cl</h1>
-					<span class="el_number">17</span>
-				</div>
-				<div class="box noble_gas">
-					<span class="el_weight">39.948</span>
-					<h1>Ar</h1>
-					<span class="el_number">18</span>
-				</div>
-			</div>
-			<div class="flex-grid">
-				<div class="box alkali_metal">
-					<span class="el_weight">39.098</span>
-					<h1>K</h1>
-					<span class="el_number">19</span>
-				</div>
-				<div class="box alkaline_earth">
-					<span class="el_weight">40.078</span>
-					<h1>Ca</h1>
-					<span class="el_number">20</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">44.956</span>
-					<h1>Sc</h1>
-					<span class="el_number">21</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">47.867</span>
-					<h1>Ti</h1>
-					<span class="el_number">22</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">50.942</span>
-					<h1>V</h1>
-					<span class="el_number">23</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">51.996</span>
-					<h1>Cr</h1>
-					<span class="el_number">24</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">54.938</span>
-					<h1>Mn</h1>
-					<span class="el_number">25</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">55.845</span>
-					<h1>Fe</h1>
-					<span class="el_number">26</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">58.933</span>
-					<h1>Co</h1>
-					<span class="el_number">27</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">58.693</span>
-					<h1>Ni</h1>
-					<span class="el_number">28</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">63.546</span>
-					<h1>Cu</h1>
-					<span class="el_number">29</span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight">65.38</span>
-					<h1>Zn</h1>
-					<span class="el_number">30</span>
-				</div>
-				<div class="box basic_metal">
-					<span class="el_weight">69.723</span>
-					<h1>Ga</h1>
-					<span class="el_number">31</span>				
-				</div>
-				<div class="box semi_metal">
-					<span class="el_weight">72.631</span>
-					<h1>Ge</h1>
-					<span class="el_number">32</span>
-				</div>
-				<div class="box semi_metal">
-					<span class="el_weight">74.922</span>
-					<h1>As</h1>
-					<span class="el_number">33</span>
-				</div>
-				<div class="box non_metal">
-					<span class="el_weight">78.971</span>
-					<h1>Se</h1>
-					<span class="el_number">34</span>
-				</div>
-				<div class="box halogen">
-					<span class="el_weight">79.904</span>
-					<h1>Br</h1>
-					<span class="el_number">35</span>
-				</div>
-				<div class="box noble_gas">
-					<span class="el_weight">83.789</span>
-					<h1>Kr</h1>
-					<span class="el_number">36</span>
-				</div>
-			</div>
-			<div class="flex-grid">
-				<div class="box alkali_metal">
-					<span class="el_weight"></span>
-					<h1></h1>
-					<span class="el_number"></span>
-				</div>
-				<div class="box alkaline_earth">
-					<span class="el_weight"></span>
-					<h1></h1>
-					<span class="el_number"></span>
-				</div>
-				<div class="box transition_metal">
-					<span class="el_weight"></span>
-					<h1></h1>
-					<span class="el_number"></span>
-				</div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box noble_gas">
-					<span class="el_weight"></span>
-					<h1>He</h1>
-					<span class="el_number"></span>
-				</div>
-			</div>
-			<div class="flex-grid">
-				<div class="box noble_gas">
-					<span class="el_weight">1.008</span>
-					<h1>H</h1>
-					<span class="el_number">1</span>
-				</div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box noble_gas">
-					<span class="el_weight"></span>
-					<h1>He</h1>
-					<span class="el_number"></span>
-				</div>
-			</div>
-			<div class="flex-grid">
-				<div class="box noble_gas">
-					<span class="el_weight">1.008</span>
-					<h1>H</h1>
-					<span class="el_number">1</span>
-				</div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box noble_gas">
-					<span class="el_weight"></span>
-					<h1>He</h1>
-					<span class="el_number"></span>
-				</div>
-			</div>
-			<div class="flex-grid">
-				<div class="box noble_gas">
-					<span class="el_weight">1.008</span>
-					<h1>H</h1>
-					<span class="el_number">1</span>
-				</div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box noble_gas">
-					<span class="el_weight"></span>
-					<h1>He</h1>
-					<span class="el_number"></span>
-				</div>
-			</div>
-			<div class="flex-grid">
-				<div class="box noble_gas">
-					<span class="el_weight">1.008</span>
-					<h1>H</h1>
-					<span class="el_number">1</span>
-				</div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box noble_gas">
-					<span class="el_weight"></span>
-					<h1>He</h1>
-					<span class="el_number"></span>
-				</div>
-			</div>
-		</div>
-	</body>
+        </style>
+    </head>
+    <body>
+        <div class ="wrapper">
+            <div class="flex-grid">
+                <div class="box non_metal">
+                    <div  class="el_weight">1.008</div>  
+                    <h1>H</h1>
+                    <div  class="el_number">1</div>  
+                </div>
+                <div class="box noble_gas">
+                    <div class="el_weight">4.002</div>
+                    <h1>He</h1>
+                    <div  class="el_number">2</div>  
+                </div>
+            </div>
+            <div class="flex-grid">
+                <div class="box alkali_metal">
+                    <div  class="el_weight">6.941</div>  
+                    <h1>Li</h1>
+                    <div  class="el_number">3</div>  
+                </div>
+                <div class="box alkaline_earth">
+                    <div  class="el_weight">9.012</div>  
+                    <h1>Be</h1>
+                    <div  class="el_number">4</div>  
+                </div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div> 
+                <div class="box semi_metal">
+                    <div  class="el_weight">10.811</div>  
+                    <h1>Ne</h1>
+                    <div  class="el_number">5</div>  
+                </div>
+                <div class="box non_metal">
+                    <div  class="el_weight">12.011</div>  
+                    <h1>C</h1>
+                    <div  class="el_number">6</div>  
+                </div>
+                <div class="box non_metal">
+                    <div  class="el_weight">14.007</div>  
+                    <h1>N</h1>
+                    <div  class="el_number">7</div>  
+                </div>
+                <div class="box non_metal">
+                    <div  class="el_weight">15.999</div>  
+                    <h1>O</h1>
+                    <div  class="el_number">8</div>  
+                </div>
+                <div class="box halogen">
+                    <div  class="el_weight">18.988</div>  
+                    <h1>Fe</h1>
+                    <div  class="el_number">9</div>  				
+                </div>
+                <div class="box noble_gas">
+                    <div  class="el_weight">20.180</div>  
+                    <h1>Ne</h1>
+                    <div  class="el_number">10</div>  
+                </div>
+            </div>
+            <div class="flex-grid">
+                <div class="box alkali_metal">
+                    <div  class="el_weight">22.99</div>  
+                    <h1>Na</h1>
+                    <div  class="el_number">11</div>  
+                </div>
+                <div class="box alkaline_earth">
+                    <div  class="el_weight">24.305</div>  
+                    <h1>Mg</h1>
+                    <div  class="el_number">12</div>  
+                </div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box basic_metal">
+                    <div  class="el_weight">26.982</div>  
+                    <h1>Al</h1>
+                    <div  class="el_number">13</div>  
+                </div>
+                <div class="box semi_metal">
+                    <div  class="el_weight">28.086</div>  
+                    <h1>Si</h1>
+                    <div  class="el_number">14</div>  
+                </div>
+                <div class="box non_metal">
+                    <div  class="el_weight">30.974</div>  
+                    <h1>P</h1>
+                    <div  class="el_number">15</div>  
+                </div>
+                <div class="box non_metal">
+                    <div  class="el_weight">32.066</div>  
+                    <h1>S</h1>
+                    <div  class="el_number">16</div>  
+                </div>
+                <div class="box halogen">
+                    <div  class="el_weight">35.453</div>  
+                    <h1>Cl</h1>
+                    <div  class="el_number">17</div>  
+                </div>
+                <div class="box noble_gas">
+                    <div  class="el_weight">39.948</div>  
+                    <h1>Ar</h1>
+                    <div  class="el_number">18</div>  
+                </div>
+            </div>
+            <div class="flex-grid">
+                <div class="box alkali_metal">
+                    <div  class="el_weight">39.098</div>  
+                    <h1>K</h1>
+                    <div  class="el_number">19</div>  
+                </div>
+                <div class="box alkaline_earth">
+                    <div  class="el_weight">40.078</div>  
+                    <h1>Ca</h1>
+                    <div  class="el_number">20</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">44.956</div>  
+                    <h1>Sc</h1>
+                    <div  class="el_number">21</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">47.867</div>  
+                    <h1>Ti</h1>
+                    <div  class="el_number">22</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">50.942</div>  
+                    <h1>V</h1>
+                    <div  class="el_number">23</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">51.996</div>  
+                    <h1>Cr</h1>
+                    <div  class="el_number">24</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">54.938</div>  
+                    <h1>Mn</h1>
+                    <div  class="el_number">25</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">55.845</div>  
+                    <h1>Fe</h1>
+                    <div  class="el_number">26</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">58.933</div>  
+                    <h1>Co</h1>
+                    <div  class="el_number">27</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">58.693</div>  
+                    <h1>Ni</h1>
+                    <div  class="el_number">28</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">63.546</div>  
+                    <h1>Cu</h1>
+                    <div  class="el_number">29</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">65.38</div>  
+                    <h1>Zn</h1>
+                    <div  class="el_number">30</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight">69.723</div>  
+                    <h1>Ga</h1>
+                    <div  class="el_number">31</div>  				
+                </div>
+                <div class="box semi_metal">
+                    <div  class="el_weight">72.631</div>  
+                    <h1>Ge</h1>
+                    <div  class="el_number">32</div>  
+                </div>
+                <div class="box semi_metal">
+                    <div  class="el_weight">74.922</div>  
+                    <h1>As</h1>
+                    <div  class="el_number">33</div>  
+                </div>
+                <div class="box non_metal">
+                    <div  class="el_weight">78.971</div>  
+                    <h1>Se</h1>
+                    <div  class="el_number">34</div>  
+                </div>
+                <div class="box halogen">
+                    <div  class="el_weight">79.904</div>  
+                    <h1>Br</h1>
+                    <div  class="el_number">35</div>  
+                </div>
+                <div class="box noble_gas">
+                    <div  class="el_weight">83.789</div>  
+                    <h1>Kr</h1>
+                    <div  class="el_number">36</div>  
+                </div>
+            </div>
+            <div class="flex-grid">
+                <div class="box alkali_metal">
+                    <div  class="el_weight">85.467</div>  
+                    <h1>Rb</h1>
+                    <div  class="el_number">37</div>  
+                </div>
+                <div class="box alkaline_earth">
+                    <div  class="el_weight">87.621</div>  
+                    <h1>Sr</h1>
+                    <div  class="el_number">38</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">88.905</div>  
+                    <h1>Y</h1>
+                    <div  class="el_number">39</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">91.224</div>  
+                    <h1>Zr</h1>
+                    <div  class="el_number">40</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">92.906</div>  
+                    <h1>Nb</h1>
+                    <div  class="el_number">41</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight"> 95.951</div>  
+                    <h1>Mo</h1>
+                    <div  class="el_number">42</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">98</div>  
+                    <h1>Tc</h1>
+                    <div  class="el_number">43</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">101.072</div>  
+                    <h1>Ru</h1>
+                    <div  class="el_number">44</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">102.905</div>  
+                    <h1>Rh</h1>
+                    <div  class="el_number">45</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">106.421</div>  
+                    <h1>Pd</h1>
+                    <div  class="el_number">46</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">107.868</div>  
+                    <h1>Ag</h1>
+                    <div  class="el_number">47</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">112.414</div>  
+                    <h1>Cd</h1>
+                    <div  class="el_number">48</div>  
+                </div>         
+                <div class="box basic_metal">
+                    <div  class="el_weight">114.818</div>  
+                    <h1>In</h1>
+                    <div  class="el_number">49</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight">118.710</div>  
+                    <h1>Sn</h1>
+                    <div  class="el_number">50</div>  
+                </div>
+                <div class="box semi_metal">
+                    <div  class="el_weight">121.760</div>  
+                    <h1>Sb</h1>
+                    <div  class="el_number">51</div>  
+                </div>
+                <div class="box semi_metal">
+                    <div  class="el_weight">127.603</div>  
+                    <h1>Te</h1>
+                    <div  class="el_number">52</div>  
+                </div>
+                <div class="box halogen">
+                    <div  class="el_weight">126.904</div>  
+                    <h1>I</h1>
+                    <div  class="el_number">53</div>  
+                </div>
+                <div class="box noble_gas">
+                    <div  class="el_weight">131.293</div>  
+                    <h1>Xe</h1>
+                    <div  class="el_number">54</div>  
+                </div>
+            </div>
+            <div class="flex-grid">
+                <div class="box alkali_metal">
+                    <div  class="el_weight">132.905</div>  
+                    <h1>Cs</h1>
+                    <div  class="el_number">55</div>  
+                </div>
+                <div class="box alkaline_earth">
+                    <div  class="el_weight">137.327</div>  
+                    <h1>Ba</h1>
+                    <div  class="el_number">56</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight"></div>  
+                    <h1></h1>
+                    <div  class="el_number">57-71</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight"> 178.492</div>  
+                    <h1>Hf</h1>
+                    <div  class="el_number">72</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">180.947</div>  
+                    <h1>Ta</h1>
+                    <div  class="el_number">73</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight"> 183.841</div>  
+                    <h1>W</h1>
+                    <div  class="el_number">74</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">186.207</div>  
+                    <h1>Re</h1>
+                    <div  class="el_number">75</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">190.233</div>  
+                    <h1>Os</h1>
+                    <div  class="el_number">76</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">192.217</div>  
+                    <h1>Ir</h1>
+                    <div  class="el_number">77</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">195.084</div>  
+                    <h1>Pt</h1>
+                    <div  class="el_number">78</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">196.966</div>  
+                    <h1>Au</h1>
+                    <div  class="el_number">79</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">200.592</div>  
+                    <h1>Hg</h1>
+                    <div  class="el_number">80</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight">204.38</div>  
+                    <h1>Tl</h1>
+                    <div  class="el_number">81</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight">207.21</div>  
+                    <h1>Pb</h1>
+                    <div  class="el_number">82</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight">208.980</div>  
+                    <h1>Bi</h1>
+                    <div  class="el_number">83</div>  
+                </div>
+                <div class="box semi_metal">
+                    <div  class="el_weight">209</div>  
+                    <h1>Po</h1>
+                    <div  class="el_number">84</div>  
+                </div>
+                <div class="box halogen">
+                    <div  class="el_weight">210</div>  
+                    <h1>At</h1>
+                    <div  class="el_number">85</div>  
+                </div>
+                <div class="box noble_gas">
+                    <div  class="el_weight">222</div>  
+                    <h1>Rn</h1>
+                    <div  class="el_number">86</div>  
+                </div>
+            </div>
+            <div class="flex-grid">
+                <div class="box alkali_metal">
+                    <div  class="el_weight">223</div>  
+                    <h1>Fr</h1>
+                    <div  class="el_number">87</div>  
+                </div>
+                <div class="box alkaline_earth">
+                    <div  class="el_weight">226</div>  
+                    <h1>Ra</h1>
+                    <div  class="el_number">88</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight"></div>  
+                    <h1></h1>
+                    <div  class="el_number">89-103</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">267</div>  
+                    <h1>Rf</h1>
+                    <div  class="el_number">104</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">268</div>  
+                    <h1>Db</h1>
+                    <div  class="el_number">105</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">269</div>  
+                    <h1>Sg</h1>
+                    <div  class="el_number">106</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">270</div>  
+                    <h1>Bh</h1>
+                    <div  class="el_number">107</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">269</div>  
+                    <h1>Hs</h1>
+                    <div  class="el_number">108</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">278</div>  
+                    <h1>Mt</h1>
+                    <div  class="el_number">109</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">281</div>  
+                    <h1>Ds</h1>
+                    <div  class="el_number">110</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">282</div>  
+                    <h1>Rg</h1>
+                    <div  class="el_number">111</div>  
+                </div>
+                <div class="box transition_metal">
+                    <div  class="el_weight">285</div>  
+                    <h1>Cn</h1>
+                    <div  class="el_number">112</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight"></div>  
+                    <h1>Uut</h1>
+                    <div  class="el_number">113</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight"></div>  
+                    <h1>FI</h1>
+                    <div  class="el_number">114</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight"></div>  
+                    <h1>Uup</h1>
+                    <div  class="el_number">115</div>  
+                </div>
+                <div class="box basic_metal">
+                    <div  class="el_weight"></div>  
+                    <h1>Lv</h1>
+                    <div  class="el_number">116</div>  
+                </div>
+                <div class="box halogen">
+                    <div  class="el_weight"></div>  
+                    <h1>Uus</h1>
+                    <div  class="el_number">117</div>  
+                </div>
+                <div class="box noble_gas">
+                    <div  class="el_weight"></div>  
+                    <h1>Uuo</h1>
+                    <div  class="el_number">118</div>  
+                </div>
+            </div>
+            <div class="flex-grid">
+                <div class ="box"></div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">138.905</div>  
+                    <h1>La</h1>
+                    <div  class="el_number">57</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">140.116</div>  
+                    <h1>Ce</h1>
+                    <div  class="el_number">58</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">140.907</div>  
+                    <h1>Pr</h1>
+                    <div  class="el_number">59</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">144.242</div>  
+                    <h1>Nd</h1>
+                    <div  class="el_number">60</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">145</div>  
+                    <h1>Pm</h1>
+                    <div  class="el_number">61</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">150.362</div>  
+                    <h1>Sm</h1>
+                    <div  class="el_number">62</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">151.964</div>  
+                    <h1>Eu</h1>
+                    <div  class="el_number">63</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">157.253</div>  
+                    <h1>Gd</h1>
+                    <div  class="el_number">64</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">158.925</div>  
+                    <h1>Tb</h1>
+                    <div  class="el_number">65</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">162.500</div>  
+                    <h1>Dy</h1>
+                    <div  class="el_number">66</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">164.930</div>  
+                    <h1>Ho</h1>
+                    <div  class="el_number">67</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">167.259</div>  
+                    <h1>Er</h1>
+                    <div  class="el_number">68</div>
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">168.934</div>  
+                    <h1>Tm</h1>
+                    <div  class="el_number">69</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">173.045</div>  
+                    <h1>Yb</h1>
+                    <div  class="el_number">70</div>  
+                </div>
+                <div class="box lanthanide">
+                    <div  class="el_weight">174.966</div>  
+                    <h1>Lu</h1>
+                    <div  class="el_number">71</div>  
+                </div>
+				<div class="box"></div>
+            </div>
+            <div class="flex-grid">
+                <div class="box"></div>
+                <div class="box actinide">
+                    <div  class="el_weight">227</div>  
+                    <h1>Ac</h1>
+                    <div  class="el_number">89</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">232.037</div>  
+                    <h1>Th</h1>
+                    <div  class="el_number">90</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">231.035</div>  
+                    <h1>Pa</h1>
+                    <div  class="el_number">91</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">238.028</div>  
+                    <h1>U</h1>
+                    <div  class="el_number">92</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">237</div>  
+                    <h1>Np</h1>
+                    <div  class="el_number">93</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">244</div>  
+                    <h1>Pu</h1>
+                    <div  class="el_number">94</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">243</div>  
+                    <h1>Am</h1>
+                    <div  class="el_number">95</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">247</div>  
+                    <h1>Cm</h1>
+                    <div  class="el_number">96</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">247</div>  
+                    <h1>Bk</h1>
+                    <div  class="el_number">97</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">251</div>  
+                    <h1>Cf</h1>
+                    <div  class="el_number">98</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">252</div>  
+                    <h1>Es</h1>
+                    <div  class="el_number">99</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">257</div>  
+                    <h1>Fm</h1>
+                    <div  class="el_number">100</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">258</div>  
+                    <h1>Md</h1>
+                    <div  class="el_number">101</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">259</div>  
+                    <h1>No</h1>
+                    <div  class="el_number">102</div>  
+                </div>
+                <div class="box actinide">
+                    <div  class="el_weight">266</div>  
+                    <h1>Lr</h1>
+                    <div  class="el_number">103</div>  
+                </div>
+				<div class="box"></div>
+            </div>
+        </div>
+    </body>
 </html>
