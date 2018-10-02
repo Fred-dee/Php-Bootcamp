@@ -1,96 +1,246 @@
-body
-{
-	background-color: #4e4e4e;
+.top{
+    position: absolute;
+    background-color: rgb(144, 144, 144);
+    height: 11%;
+    width: 95%;
+    top: 1%; 
+    left: 1.5%;
+    bottom: 25;
+    border-radius: 10px;
+	box-shadow: 7px 7px 7px rgba(0,0,0,4);
+    padding: 10px;
 }
-
-
-.img-rounded
+.rectangle
 {
-	border-radius: 15px;
-	border: 0px;
+    position: absolute;
+    border-radius: 10px;
+    height: 50%;
+    width: 62%; 
+    top: 17%;
+    left: 18%;
+    background-color: rgb(144, 144, 144);
+    box-shadow: 7px 7px 7px rgba(0,0,0,4);
+    padding: 8px;
 }
-
-.panel-side
-{
-	position: inherit;
-	text-align: center;
-	background-color: #8f8f8f;
-	border-radius: 15px;
-	box-shadow: 7px 7px 5px;
-	display: flex;
-	flex-direction: column;
-	max-width: 250px;
-	min-width: 200px;
-	justify-content: space-evenly;
-	max-height: 10%;
+.lpillar {
+        position: absolute;
+        border-radius: 10px;
+        height: 35%;
+        width: 9.25%; 
+        top: 17%;
+        left: 4%;
+        background-color: rgb(144, 144, 144);
+        box-shadow: 7px 7px 7px rgba(0,0,0,4);
+        padding: 10px;
+      }
+.rpillar {
+            position: absolute;
+            border-radius: 10px;
+            height: 35%;
+            width: 9.25%; 
+            top: 17%;
+            right: 4%;
+            background-color: rgb(144, 144, 144);
+            box-shadow: 7px 7px 7px rgba(0,0,0,4);
+            padding: 10px;
+      }
+#cluster{
+    height: 100%;
+    width: 100%;
 }
-
-.panel-center
-{
-	border-radius: 15px;
-	box-shadow: 7px 7px 5px;
-	max-height: 75%;
-	height: 50%;
+#magnify{
+    position: absolute;
+    right: 3%;
+    bottom: -15%;
+    height: 100%;
+    width: 20%;
 }
-
-.img-main
-{
-	
+#reload{
+    position: absolute;
+    height: 13%;
+    width: 1.8%;
+    top: 5%;
+    right: 1%;
 }
-
-.img-small
-{
-	max-height: 15px;
-	max-width:  15px;
-	position: relative;
+#close{
+    position: absolute;
+    height: 15%;
+    width: 2%;
+    bottom: 6%;
+    right: 1%;
 }
-
-.img-pannel
-{
-	text-align: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	margin: auto;
+#title42{
+    position: absolute;
+    height: 75%;
+    width: 35%;
+    bottom: 17%;
+    left: 1%;
 }
-
-.img-banner
-{
-	box-shadow: 7px 7px 5px;
-	flex-grow: 1;
-	text-align: center;
+#book{
+    position: absolute;
+    height: 22%;
+    width: 45%;
+    top: 5%;
+    left: 26%;
 }
-.img-icon
-{
-	max-width: inherit;
-	max-height: 80px;
-	height: 100%;
-	width: auto;
-	flex-grow: 1;
-	border: 0px;
+#towel{
+    position: absolute;
+    height: 12%;
+    width: 45%;
+    top: 28%;
+    left: 26%;
 }
-
-.img-click
-{
-    position: relative;
-    text-align: right; 
+#topbrick1{
+    position: absolute;
+    height: 12%;
+    width: 30%;
+    top: 41%;
+    left: 5.5%;
 }
-
-.my-carousel
-{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	padding: 5px;
+#topbrick2{
+    position: absolute;
+    height: 12%;
+    width: 30%;
+    top: 41%;
+    left: 34%;
 }
+#topbrick3{
+    position: absolute;
+    height: 12%;
+    width: 30%;
+    top: 41%;
+    left: 64%;
+}
+#botbrick1{
+    position: absolute;
+    height: 12%;
+    width: 30%;
+    top: 53%;
+    left: 5.5%;
+}
+#botbrick2{
+    position: absolute;
+    height: 12%;
+    width: 30%;
+    top: 53%;
+    left: 34%;
+}
+#botbrick3{
+    position: absolute;
+    height: 12%;
+    width: 30%;
+    top: 53%;
+    left: 64%;
+}
+#arrow{
+    position: absolute;
+    height: 16%;
+    width: 45%;
+    top: 5%;
+    left: 26%;
+}
+#fist{
+    position: absolute;
+    height: 16%;
+    width: 45%;
+    top: 22%;
+    left: 25%;
+}
+#eye{
+    position: absolute;
+    height: 16%;
+    width: 45%;
+    top: 41%;
+    left: 25%;
+    border: 3px solid;
+    border-color: red;
+    border-radius: 5px;
+}
+#tools{
+    position: absolute;
+    height: 16%;
+    width: 45%;
+    top: 60%;
+    left: 25%;
+}
+#chat{
+    position: absolute;
+    height: 16%;
+    width: 45%;
+    top: 79%;
+    left: 25%;
 
-.brick-wrap
+}
+.whole{
+    position: absolute;
+    
+    margin-left: 12%;
+    height: 75%;
+    width: 76%;
+}
+.chair
 {
-	max-height: 100px;
-	max-width: 150px;
-	margin-left: 20px;
-	flex-grow: 1;
-	background-image: url("./resources/brick.jpg");
-	overflow: hidden;
+	position: absolute;
+	top: 45.8%;
+	right: 52.5%;
+	width: 5.7%;
+	height: 18%;
+	padding: 10px;
+}
+.screen
+{
+	position: absolute;
+	top: 44.5%;
+	right: 20%;
+	width: 9%;
+	height: 12.5%;
+    padding: 10px;
+}
+.block
+{
+	position: absolute;
+	top: 63%;
+	left: -7%;
+	width: 37%;
+	height: 13%;
+	background-color: #8cff8c;
+	border-radius: 10px;
+	box-shadow: 7px 7px 7px rgb(0, 0, 0);
+	padding: 10px;
+}
+.gtext
+{
+	position: absolute;
+	top: 5%;
+	color: black;
+	width: 80%;
+	height: 20%;
+    font: 1em sans-serif;
+    font-size: 10px;
+}
+#enter
+{
+	font:2em Georgia, serif;
+}
+#shadow
+{
+	text-shadow: 0.4em 0.3em 0.5em red;
+}
+#text_box
+{
+	position: absolute;
+	top: 55%;
+	left: 3%;
+	width: 63.5%;
+	background-color: white;
+}
+.fbutton
+{
+	position: absolute;
+	top: 55%;
+	right: 8%;
+}
+#sub_but
+{
+	background-color: #efefef;
 }

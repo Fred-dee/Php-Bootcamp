@@ -4,9 +4,6 @@
 	{
 		$tmp = $arr;
 		sort($tmp);
-		if ($tmp == $arr)
-			return true;
-		else
-			return false;
+		return ($tmp == $arr);
 	}
 ?>

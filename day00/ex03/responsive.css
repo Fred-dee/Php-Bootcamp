@@ -1,0 +1,91 @@
+body
+{
+	background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Hme4C4_7iosf3emf/realistic-galaxy-milky-way-colorful-space-background_rlfmozgtll_thumbnail-full01.png');
+	background-repeat: no-repeat;
+	background-size: cover contain ;
+}
+.wrapper
+{
+	max-height: 500px;
+}
+.flex-grid
+{
+	display: flex;
+	justify-content: space-evenly;
+	grid-row: auto;
+	padding: 3px;
+	flow-grow : 1;
+}
+.el_number
+{
+	font-size: 1em;
+	width: 100%;
+	position: relative;
+	text-align: left;
+}
+.el_weight
+{
+	position: relative;
+	font-size: 1em;
+	width: 100%;
+	text-align: right;
+}
+.el_name
+{
+	text-align: center;
+}
+.box
+{
+	color: black;
+	flex-grow: 1;
+	margin: 5px;
+	text-align: center;
+	font-size: 0.5em;
+	min-height: 5em;
+	max-height: 10em;
+	min-width: 5em;
+	max-width: 10em;
+	-webkit-user-modify: read-write;
+	-moz-user-modify: read-write;
+	user-modify: read-write;
+}
+.noble_gas
+{
+	background-color: #f8ff30;
+}
+.alkali_metal
+{
+	background-color: #ff30ba;
+}
+.alkaline_earth
+{
+	background-color: #a80070;
+}
+.transition_metal
+{
+	background-color: #4ba1ed;
+}
+.basic_metal
+{
+	background-color: #ff6c16;
+}
+.semi_metal
+{
+	background-color: #16ff48;
+}
+.non_metal
+{
+	background-color: #02acef;
+}
+.halogen
+{
+	background-color: #efe302;
+}
+.lanthanide
+{
+	background-color: #b8ff6d;
+}
+.actinide
+{
+	background-color: #fc1b8f;
+}

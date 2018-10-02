@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Day of the 42</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./doft.css"/>
-    </head>
-    <body>
-        <div class="img-panel">
-			<div class="img-click">
-                <img class ="img-small" src="resources/reload.png" alt ="" />
-            </div>
-            <img class="img-rounded img-banner" src="resources/day_of_the_42.png" alt="" style="z-index: -1;"/>
-            <div class="img-click">
-                <img class="img-small" src="resources/close.gif" alt="" style=""/>
-            </div>
-        </div>
-        <div class ="my-carousel">
-            <div class="panel-side">
-                <img class="img-rounded img-icon" src="resources/arrow.png" alt=""/>
-                <img class="img-rounded img-icon" src="resources/main.png" alt=""/>
-                <img class="img-rounded img-icon" src="resources/oeil.png" alt=""/>
-                <img class="img-rounded img-icon" src="resources/outil.png" alt=""/>
-                <img class="img-rounded img-icon" src="resources/chat-icon.png" alt=""/>
-            </div>
-            <div class ="panel-center">
-                <img class="img-rounded img-main" src="resources/cluster.jpg" alt=""/>
-            </div>
-            <div class="panel-side">
-                <img class="img-rounded img-icon" src="resources/book.png" alt="" />
-                <img class="img-rounded img-icon" src="resources/towel.png" alt=""/>
-				<div class="brick-wrap">
+	<head> 
+		<title>Day of the 42</title>
+		<link rel="stylesheet" type="text/css" href="./doft.css">
+	</head>
+	<body style="background-color:rgb(80, 80, 80)">
+		<div class="whole">
+			<div class="top">
+				<img src="resources/day_of_the_42.png" id="title42" alt="" />
+				<img src="resources/loupe.png" id="magnify" alt="" />
+				<a href="http://www.relaischateaux.com"><img SRC="resources/close.gif" id="close" /></a>
+				<a href="http://www.disney.com"><IMG SRC="resources/reload.png" id="reload" /></a>
+			</div>
+			<div class="lpillar"> 
+				<img src="resources/arrow.png" id="arrow" alt="" />
+				<img src="resources/main.png" id="fist"  alt = ""/>
+				<img src="resources/outil.png" id="tools" alt= "" />
+				<img src="resources/oeil.png" id="eye" alt ="" />
+				<img src="resources/chat-icon.png" id="chat" alt = "" /> 
+			</div>
+			<div class="rectangle"> 
+					<img src="resources/cluster.jpg" id="cluster" alt ="" /> 
+			</div>
+			<div class="rpillar"> 
+				<img src="resources/book.png" id="book" alt=""/>
+				<img src="resources/towel.png" id="towel" alt="" /> 
+				<div>
+					<img src="resources/brick.jpg" id="topbrick1" alt="" />
+					<img src="resources/brick.jpg" id="topbrick2" alt="" />
+					<img src="resources/brick.jpg" id="topbrick3" alt="" />
+					<img src="resources/brick.jpg" id="botbrick1" alt="" />
+					<img src="resources/brick.jpg" id="botbrick2" alt="" />
+					<img src="resources/brick.jpg" id="botbrick3" alt="" />
 				</div>
-            </div>
-        </div>
-    </body>
+			</div>
+			<div class="block">
+				<form>
+					<div class=gtext>Vous <span id=enter>entrez</span> alors dans une grande piece remplie d'<span id=shadow>ordinateurs</span>...<br/><i>- Bonjour, vous &#234;tes nouveau ici ?</i></div>
+					<div class = fbutton>
+						<button id=sub_but type="button">Repondre</button>
+					</div>
+					<input id=text_box type="text" />
+				</form>
+			</div>
+			<a href="http://www.ikea.com"><div class=chair></div></a>
+			<a href="http://www.apple.com"><div class=screen></div></a>
+		</div>
+	</body>
 </html>
