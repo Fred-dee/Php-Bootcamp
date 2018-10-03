@@ -19,6 +19,7 @@
 		"novembre" => "11",
 		"decembre" => "12"
 	);
+	$days = array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche");
 	$output;
 	$split = array();
 	$input;
@@ -37,9 +38,10 @@
 			exit();
 		}
 		$split = preg_split("/\s/", $input);
+		$split[0] = strtolower($split[0]);
 		$split[2] = strtolower($split[2]);
 		$split[2] = $months[$split[2]];
-		if ($split[2] == null)
+		if ($split[2] == null || array_search($split[0], $days) == false)
 		{
 			echo "Wrong Format\n";
 			exit();
