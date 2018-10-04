@@ -47,7 +47,6 @@
 			exit();
 		}
 		$formatted_str = $split[2]."/".$split[1]."/".$split[3]." ".$split[4];
-		echo $formatted_str."\n";
 		$end_time = strtotime($formatted_str);
 		print($end_time."\n");
 	}
