@@ -6,7 +6,7 @@ $stack_new = array();
 while ($read = fread($var, 628))
 {
   $stack = unpack("a256ut_user/a4ut_id/a32ut_line/iut_pid/iut_type/I2ut_time ", $read);
-  if ($stack[ut_type] == 7)
+  if ($stack[ut_type] == USER_PROCESS)
 		array_push($stack_new, $stack);
 }
 foreach ($stack_new as $pri)
