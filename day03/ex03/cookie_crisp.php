@@ -1,24 +1,20 @@
 <?php
-session_start();
-if (isset($_GET))
+if ($_GET != NULL)
 {
-//	$inst = $_GET["action"];
-//	$name = $_GET["name"];
 	if ($_GET['action'] === "set")
 	{
-	//	$value = $_GET["value"];
 		setcookie($_GET['name'], $_GET["value"], time()+60*60*24*30);
 	}
 	elseif ($_GET["action"] === "del")
 	{
-		unset($_COOKIE[$name]);
+		$_COOKIE[$_GET["name"]] = NULL;
 		setcookie($_GET["name"], "delete", time() - 60*60*24*30);
 	}
 	elseif ($_GET["action"] === "get")
 	{
-		if (isset($_COOKIE) && isset($_COOKIE[$name]))
+		if ($_COOKIE[$_GET["name"]] != NULL)
 		{
-			echo $_COOKIE[$name]."\n";
+			echo $_COOKIE[$_GET["name"]]."\n";
 		}
 	}
 }

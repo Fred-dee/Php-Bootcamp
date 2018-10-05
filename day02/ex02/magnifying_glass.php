@@ -12,8 +12,9 @@ if ($argc > 1)
 		{
 			return($matches[1].strtoupper($matches[2]).$matches[3]);
 		}, $file);
-	$nb = preg_match("/(<\s*a[^>]*>)(.*?)(<)/",  $file);
-	$file = preg_replace_callback("/(<\s*a[^>]*>)(.*?)(<)/",
+	$nb = preg_match("/(<[^>]*>)(.*?)(<)/",  $file);
+	echo $nb;
+	$file = preg_replace_callback("/(<\s*[^>]*\s*>)(.*?)(<)/",
 		function($matches)
 		{
 			return($matches[1].strtoupper($matches[2]).$matches[3]);

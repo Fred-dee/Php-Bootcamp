@@ -16,11 +16,9 @@
 				mkdir($dir, 0777);
 			}
 			preg_match_all("/(<\s*img\s*src=\")(.*?)\"/", $raw, $matches, PREG_PATTERN_ORDER);
-			$modified = preg_replace("/\//", "/\//", subject);
 			foreach ($matches[2] as $key => $value)
 			{
 				$value = preg_replace("/^(http|https):\/\/$dir/", "", $value);
-				echo $argv[1].$value."\n";
 				$ch = curl_init($argv[1].$value);
 				curl_setopt($ch, CURLOPT_HEADER, 0);
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

@@ -14,13 +14,12 @@
 		if (($fp = fopen($argv[1], "r")) == true)
 		{	
 			$surname = array();
-			$last_name = array();
+			$name = array();
 			$mail = array();
 			$IP = array();
 			$pseudo = array();
 			while (($store = trim(fgets($fp))) != null)
 			{
-
 				$tmp = explode(";", $store);
 				if ($argv[2] == "name")
 					$key = $tmp[0];
@@ -32,19 +31,12 @@
 					$key = $tmp[3];
 				else if ($argv[2] == "pseudo")
 					$key = $tmp[4];
-		
-
 				$surname[$key] = $tmp[0];
-				$last_name[$key] = $tmp[1];
+				$name[$key] = $tmp[1];
 				$mail[$key] = $tmp[2];
 				$IP[$key] = $tmp[3];
 				$pseudo[$key] = $tmp[4];
 			}
-			/*
-			print_r($surname);
-			print_r($last_name);
-			print_r($mail);
-			print_r($IP);*/
 			while ($line != null && 1)
 			{
 				echo "Enter your command: ";
