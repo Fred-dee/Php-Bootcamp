@@ -1,0 +1,141 @@
+body
+{
+    padding-top: 50px;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    margin-bottom: 5px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar .item
+{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+.navbar .item-right
+{
+    float: right;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+.nav-dropdown-toggle:hover
+{
+    .nav-dropdown
+    {
+        display: box;
+    }
+}
+nav-dropdown
+{
+    display: none;
+}
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    margin-bottom: 5px;
+}
+/*The wrapper for the images */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.responsive-img {
+    max-width: 100%;
+}
+.media {
+    margin: 3rem;
+    height: 250px;
+    max-height: 250px;
+    flex-grow: 1;
+    
+}
+.media img {
+    display: block;
+    position: inherit;
+    height: 200px;;
+    max-height: inherit;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 600px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .media {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .media {
+        max-width: calc(100% / 5);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .media {
+        max-width: calc(30% - 2rem);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .media {
+        max-width: calc(15% - 2rem);
+    }
+} 
+#footer_text
+{
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    margin-right: 25px;
+}
+.footer
+{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    margin-left: auto;
+    padding-left: 0;
+}
+
+.error_msg
+{
+    color: white;
+    background-color: #f20000;
+    border: 1px solid purple;
+    border-radius: 3px;
+    font-size: 1em;
+    height: 26px;
+    text-align: center;
+     padding: 6px 12px;
+}
