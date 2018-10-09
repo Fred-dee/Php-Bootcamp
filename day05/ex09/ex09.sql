@@ -1,0 +1,1 @@
+SELECT count(title) AS "nb_short-films" FROM `db_mdilapi`.`film` WHERE duration < 25;

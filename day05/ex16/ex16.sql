@@ -1,0 +1,1 @@
+SELECT count(id_film) AS movies WHERE date()
