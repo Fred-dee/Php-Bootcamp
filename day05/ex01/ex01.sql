@@ -1,7 +1,6 @@
-CREATE TABLE IF NOT EXISTS ft_table
-(
-	`id` int(11) NOT NULL AUTO INCREMENT PRIMARY KEY,
-	`login` varchar(8) NOT NULL DEFAULT 'toto',
-	`group` ENUM NOT NULL ('staff', 'student', 'other'),
+CREATE TABLE IF NOT EXISTS db_mdilapi.ft_table(
+	`id` int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL ,
+	`login` varchar(8)  DEFAULT 'toto' NOT NULL,
+	`group` ENUM ('staff', 'student', 'other') NOT NULL ,
 	`creation_date` DATE NOT NULL
 );
