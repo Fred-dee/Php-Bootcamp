@@ -3,29 +3,13 @@ form
     button, input, select, textarea {
         font-family : inherit;
         font-size   : 100%;
+        max-width: inherit;;
     }
 }
 .form-group
 {
     margin-bottom: 15px;
-}
-
-.grid-wrapper
-{
-    display: flex;
-    justify-content: space-evenly;
-    grid-row: auto;
-    padding: 3px;
-    flow-grow : 1; 
-}
-
-.cell
-{
-    color: black;
-    flex-grow: 1;
-    margin: 5px;
-    text-align: center;
-    font-size: 1em;
+    max-width: inherit;
 }
 
 .label
