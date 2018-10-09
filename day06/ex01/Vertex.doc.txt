@@ -1,0 +1,18 @@
+<- Vertex ---------------------------------------------------------------------
+The Vertex class defines a point on a cartesian plane.
+
+The Class has the following 5 private attributes:
+x, y, z, and w (coordinates, of type double)
+color (of type Color)
+
+Within this class exists getter and setter methods (access modifiers) with the pattern
+get_(attribute name) ();
+and 
+set_(attribute name)($arg) ;
+
+The Constructor and setter methods, with regards to handling the color variable
+accept both arrays and objects. In the event of an array of values being passed
+as arguments, a new object will be created with those arguments.
+
+
+--------------------------------------------------------------------- Vertex ->
