@@ -1,8 +1,7 @@
 <?php
+	require_once '../ex00/Color.class.php';	
 	class Vertex 
 	{
-
-		//require_once '../ex00/Color.class.php';
 		private $x;
 		private $y;
 		private $z;
@@ -14,11 +13,11 @@
 		{
 			if (!empty($args))
 			{
-				$this->x = (double)$args['x'];
-				$this->y = (double)$args['y'];
-				$this->z = (double)$args['z'];
+				$this->x = (float)$args['x'];
+				$this->y = (float)$args['y'];
+				$this->z = (float)$args['z'];
 				if (isset($args['w']))
-					$this->w = (double)$args['w'];
+					$this->w = (float)$args['w'];
 				else
 					$this->w = 1.0;
 				if (isset(($args['color'])))
@@ -41,29 +40,29 @@
 		}
 		function __toString()
 		{
-			$ret = "(Vertex( x: ".str_pad(number_format((double)$this->x, 2, '.', ''), 3, " ", STR_PAD_LEFT);
-			$ret .= ", y: ".str_pad(number_format((double)$this->y, 2, '.', ''), 3, " ", STR_PAD_LEFT).", z: ";
-			$ret .= str_pad(number_format((double)$this->z, 2, '.', ''), 3, " ", STR_PAD_LEFT);
-			$ret .= ", w: ". str_pad(number_format((double)$this->w, 2, '.', ''), 3, " ", STR_PAD_LEFT).", ".$this->color." )";
+			$ret = "(Vertex( x: ".str_pad(number_format((float)$this->x, 2, '.', ''), 3, " ", STR_PAD_LEFT);
+			$ret .= ", y: ".str_pad(number_format((float)$this->y, 2, '.', ''), 3, " ", STR_PAD_LEFT).", z: ";
+			$ret .= str_pad(number_format((float)$this->z, 2, '.', ''), 3, " ", STR_PAD_LEFT);
+			$ret .= ", w: ". str_pad(number_format((float)$this->w, 2, '.', ''), 3, " ", STR_PAD_LEFT).", ".$this->color." )";
 			return $ret;
 		}
 		public static function doc()
 		{
 			return file_get_contents("Vertex.doc.txt").PHP_EOL;
 		}
-		public function get_x() : double
+		public function get_x() : float
 		{
 			return $this->x;
 		}
-		public function get_y() : double
+		public function get_y() : float
 		{
 			return $this->y;
 		}
-		public function get_z() : double
+		public function get_z() : float
 		{
 			return $this->z;
 		}
-		public function get_w() : double
+		public function get_w() : float
 		{
 			return $this->w;
 		}
@@ -72,19 +71,19 @@
 		}
 		public function set_x($in)
 		{
-			$this->x = (double)$in;
+			$this->x = (float)$in;
 		}
 		public function set_y($in)	
 		{
-			$this->y = (double)$in;
+			$this->y = (float)$in;
 		}
 		public function set_z($in)
 		{
-			$this->z = (double)$in;
+			$this->z = (float)$in;
 		}
 		public function set_w($in)
 		{
-			$this->w = (double)$in;
+			$this->w = (float)$in;
 		}
 		public function set_color($arg)
 		{
