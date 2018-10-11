@@ -1,8 +1,9 @@
 <?php
-	class Fighter
+	abstract class Fighter
 	{
 		private $type;
-
+		
+		abstract function fight($target);
 		public function __construct($type)
 		{
 			$this->type = $type;
@@ -11,6 +12,6 @@
 		{
 			return $this->type;
 		}
-		public function fight($target){}
+		
 	}
 ?>
