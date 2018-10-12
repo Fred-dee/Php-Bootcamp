@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calc</title>
+		<meta charset="utf-8">
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.js"
+		  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		  crossorigin="anonymous">
+		</script>
+		<script type ="text/javascript">
+			$(document).ready(function(){
+				setInterval(function(){
+					alert("Please use me");
+					console.log("Please use me");
+				}, 30000);
+				$("form").on("submit", function (e)
+				{
+					e.preventDefault();
+					var lhs = parseInt($("#LHS").val());
+					var rhs = parseInt($("#RHS").val());
+					var opcode = $("#operands option:selected").text();
+					var result;
+					if (!isNaN(lhs) && !isNaN(rhs))
+					{
+						if (!(lhs < 0 || rhs < 0))
+						{
+							if (!(rhs == 0 && (opcode == "/" || opcode == "%")))
+							{
+								
+								switch(opcode)
+								{
+									case "+":
+										sum = lhs + rhs;
+										break;
+									case "-":
+										sum = lhs - rhs;
+										break;
+									case "*":
+										sum = lhs * rhs;
+										break;
+									case "/":
+										sum = lhs / rhs;
+										break;
+									case "%":
+										sum = lhs % rhs;
+										break;
+								}
+								alert(sum);
+								console.log(sum);
+							}
+							else
+							{
+								alert("It's over 9000!");
+								console.log("It's over 9000!");
+							}
+							
+						}
+						else
+							alert("Error :(");
+							
+					}
+					else
+						alert("Error :(");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<form>
+			<input type="text" id="LHS" name ="LHS"/>
+			<select id ="operands">
+				<option value = "plus">+</option>
+				<option value = "minus">-</option>
+				<option value = "multiply">*</option>
+				<option value = "divide">/</option>
+				<option value = "mod">%</option>
+			</select>
+			<input type="text" id="RHS" name = "RHS"/>
+			<input type="submit" value="Try me!" />
+		</form>
+	</body>
+</html>

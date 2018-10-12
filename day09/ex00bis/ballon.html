@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ballon</title>
+		<meta charset="utf-8" />
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.js"
+		  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		  crossorigin="anonymous"></script>
+		<style type="text/css">
+			.circle
+			{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#myCirc").on("click", function(){
+					if ($(this).width() < 420)
+					{
+						$(this).width($(this).width() + 10);
+						$(this).height($(this).height() + 10);
+					}
+					else
+					{
+						$(this).height(200);
+						$(this).width(200);
+					}
+					var colour;
+					switch($(this).css("background-color"))
+					{
+						case "rgb(255, 0, 0)":
+							colour = "rgb(0, 255, 0)";
+							break;
+						case "rgb(0, 255, 0)":
+							colour = "blue";
+							break;
+						case "rgb(0, 0, 255)":
+							colour = "red";
+							break;
+					}
+					$(this).css("background-color", colour);
+				});
+				$("#myCirc").on("mouseleave", function(){
+					if ($(this).width() > 200)
+					{
+						$(this).width($(this).width() - 5);
+						$(this).height($(this).height() - 5);
+					}
+					var colour;
+					switch($(this).css("background-color"))
+					{
+						case "rgb(255, 0, 0)":
+							colour = "rgb(0, 0, 255)";
+							break;
+						case "rgb(0, 255, 0)":
+							colour = "red";
+							break;
+						case "rgb(0, 0, 255)":
+							colour = "rgb(0, 255, 0)";
+							break;
+					}
+					$(this).css("background-color", colour);
+
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class = "circle" id ="myCirc">
+		</div>
+
+	</body>
+</html>

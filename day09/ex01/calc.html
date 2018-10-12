@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body id="form" onmouseover="watch()">
+        <form>
+            <input id="left" type="number"/>
+            <select name="options" id="opp">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input id="right" type="number"/>
+            <input id="submit" type="submit" value="Try me!" onclick="calc()"/>
+        </form>
+    </body>
+    <script type="text/javascript">
+
+        function watch()
+        {
+            setInterval("doAlert()", 30000);
+        }
+
+        function doAlert()
+        {
+            alert('Please, use me...');
+        }
+
+        function calc()
+        {
+            var x;
+            var y;
+            var opp;
+            var ans;
+
+            x = parseFloat(document.getElementById("left").value);
+            y = parseFloat(document.getElementById("right").value);
+            opp = document.getElementById("opp").value;
+            
+            if (x < 0 || y < 0)
+            {
+                console.log('Error :(');
+                alert('Error :(');
+            }
+            else
+            {
+                if (opp == "+")
+                {
+                    console.log(x + y);
+                    ans = x + y;
+                }
+                if (opp == "-")
+                {
+                    console.log(x - y);
+                    ans = x - y;
+                }
+                if (opp == "*")
+                {
+                    console.log(x * y);
+                    ans = x * y;
+                }
+                if (opp == "/")
+                {
+                    if (y == 0)
+                    {
+                        console.log("It's over 9000!");
+                        ans = "It's over 9000!";
+                    }
+                    else
+                    {
+                        console.log(x / y);
+                        ans = x / y;
+                    }
+                }
+                if (opp == "%")
+                {
+                    if (y == 0)
+                    {
+                        console.log("It's over 9000!");
+                        ans = "It's over 9000!";
+                    }
+                    else
+                    {
+                        console.log(x % y);
+                        ans = x % y;
+                    }
+                }
+                alert(ans);
+            }
+            
+        }
+    </script>
+</html>
