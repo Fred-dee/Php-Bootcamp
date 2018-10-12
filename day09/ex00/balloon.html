@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ballon</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			.circle
+			{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+			.circle:hover
+			{
+				width : -10px;
+			}
+		</style>
+		<script type="text/javascript">
+			
+			document.getElementById("myCirc").addEventListener("hover", )
+			function getStyle(el,styleProp)
+			{
+				if (el.currentStyle)
+					return el.currentStyle[styleProp];
+
+				return document.defaultView.getComputedStyle(el,null)[styleProp];
+			}
+			
+			function clicked()
+			{
+				var circ = document.getElementById('myCirc');
+				var width = circ.offsetWidth + 10;
+				var height = circ.offsetHeight + 10;
+				if (width > 420)
+				{
+					height = 200;
+					width = 200;
+				}
+				var colour;
+				circ.style.width = width + "px";
+				circ.style.height = height + "px";
+				switch(getStyle(circ, "backgroundColor"))
+				{
+					case "rgb(255, 0, 0)":
+						colour = "rgb(0, 255, 0)";
+						break;
+					case "rgb(0, 255, 0)":
+						colour = "blue";
+						break;
+					case "rgb(0, 0, 255)":
+						colour = "red";
+						break;
+				}
+				circ.style.backgroundColor = colour;
+			}
+		</script>
+	</head>
+	<body>
+		<div class = "circle" id ="myCirc" onclick="clicked()">
+		</div>
+
+	</body>
+</html>
