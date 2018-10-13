@@ -4,9 +4,12 @@ $(document).ready(function(){
 		if (input.trim().length != 0)
 		{
 			input = input.trim();
-			var nd = "<div class ='clickable' id =''>" + input + "</div>"
+			var nd = "<div class ='clickable'>" + input + "</div>"
 			$("#ft_list").prepend(nd);
-			document.cookie = "obj=" + nd;
+            var d = new Date();
+            d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
+            var ex = "expires="+d.toUTCString();
+            document.cookie = input + "=" + nd + ";" + ex + ";path=~/Desktop/";
 		}
 		else
 		{
@@ -18,6 +21,23 @@ $(document).ready(function(){
 	
 	$("#ft_list").on("click", '.clickable', function(){
 		if (confirm("Do Want to remove item?: " + $(this).text()))
-			$(this).remove();
+        {
+			
+                var d = new Date();
+                cname = $(this).text();
+                d.setTime(d.getTime() - (1000*60*60*24));
+                var expires = "expires=" + d.toGMTString();
+                window.document.cookie = cname+"="+"; "+expires;
+            $(this).remove();
+        }
 	});
+    
+});
+
+$(window).on("load", function (){
+        var cook = document.cookie.split(';');
+        cook.forEach(function(item){
+            item = item.replace(/[\s|\w]+=/, "");
+            $("#ft_list").prepend(item);
+        });
 });
