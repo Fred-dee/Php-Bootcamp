@@ -2,8 +2,24 @@ var id = 0;
 
 function showCookie()
 {
-    var cook = getCookie(item);
-
+    var cook = document.cookie.split(';');
+    cook.forEach(function(item){
+        
+        var newdiv = document.createElement("div");
+        var maindiv = document.getElementById("ft_list");
+        var t = document.createTextNode(item.split('=')[0]);
+        newdiv.appendChild(t);
+        newdiv.className = "item";
+        newdiv.id = id;
+        newdiv.setAttribute("onclick", "deleteMe(this)")
+        id++;
+        if (item === null)
+            alert("Please add item");
+        else
+            maindiv.insertBefore(newdiv, maindiv.childNodes[0]);
+        
+    });
+    
 }
 
 function newItem()
@@ -20,7 +36,7 @@ function newItem()
     if (item === null)
         alert("Please add item");
     else
-        maindiv.insertBefore(newdiv, maindiv.childNodes[4]);
+        maindiv.insertBefore(newdiv, maindiv.childNodes[0]);
     document.getElementById("ft_list").value = "";
     setCookie(item, newdiv, 2);
 }
@@ -31,6 +47,11 @@ function deleteMe(elem)
     if (ans)
     {
         var toGo = document.getElementById(elem.id);
+        var d = new Date(); //Create an date object
+        cname = toGo.textContent;
+        d.setTime(d.getTime() - (1000*60*60*24)); //Set the time to the past. 1000 milliseonds = 1 second
+        var expires = "expires=" + d.toGMTString(); //Compose the expirartion date
+        window.document.cookie = cname+"="+"; "+expires;//Set the cookie with name and the expiration dat
         toGo.remove();
     }
 }
@@ -40,7 +61,7 @@ function setCookie(cname, cvalue, day)
     var d = new Date();
     d.setTime(d.getTime() + (day * 24 * 60 * 60 * 1000));
     var ex = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + ex + ";path=/";
+    document.cookie = cname + "=" + cvalue + ";" + ex + ";path=~/Desktop/";
 }
 
 function getCookie(cname)
